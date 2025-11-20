@@ -1,0 +1,106 @@
+/* --- DashboardHR.css --- */
+
+/* --- Layout Consistency --- */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #3498db;
+    color: #2c3e50;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.hr-dashboard-layout {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    min-height: 100vh;
+}
+.dashboard-content-container {
+    padding: 30px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cycle-creation-card, .cycle-list-card {
+    background-color: #ffffff;
+    border: 1px solid #dfe6e9;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cycle-creation-card h3 {
+    color: #2c3e50;
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* --- Cycle Form Layout --- */
+.form-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end; /* Align button with inputs */
+}
+
+.form-row .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Distribute space evenly */
+}
+
+.cycle-submit-btn {
+    height: 40px; /* Match height of inputs */
+    padding: 0 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* --- Cycle Status Table Styling --- */
+.cycle-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.cycle-list-table th, .cycle-list-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.cycle-list-table th {
+    background-color: #f7f9fd;
+    color: #34495e;
+    font-weight: 700;
+}
+
+/* --- CRITICAL: Status Colors --- */
+.status-active {
+    font-weight: bold;
+    color: #2ecc71; /* Green */
+}
+.status-inactive {
+    font-weight: bold;
+    color: #f39c12; /* Orange/Warning */
+}
+.status-closed {
+    font-weight: bold;
+    color: #7f8c8d; /* Gray/Neutral */
+}
+
+/* Ensure buttons stand out */
+.cycle-list-table button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #e74c3c; /* Example: Close Cycle button */
+    color: white;
+    border: none;
+}

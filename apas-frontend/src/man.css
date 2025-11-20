@@ -1,0 +1,187 @@
+/* --- General Layout and Header (Consistency with Employee Dashboard) --- */
+.manager-dashboard-layout {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9; 
+    min-height: 100vh;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    color: #2c3e50;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-content-container {
+    padding: 30px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Card Styles for Queue and Table --- */
+.approval-queue-card, .team-progress-card {
+    background-color: #ffffff;
+    border: 1px solid #dfe6e9;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.approval-queue-card h3, .team-progress-card h3 {
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+/* --- Goal Approval Queue Styling --- */
+.pending-goal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #f7f9fd;
+    border-radius: 6px;
+    background-color: #fffac2; /* Light yellow for pending action */
+    color: #a38900;
+}
+
+.approve-btn {
+    padding: 8px 15px;
+    background-color: #2ecc71; /* Green for Approval action */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* --- Team Progress Table Styling --- */
+.team-progress-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.team-progress-card th, .team-progress-card td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.team-progress-card th {
+    background-color: #f7f9fd;
+    color: #34495e;
+    font-weight: 700;
+}
+/* --- Modal General Styling --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.review-modal-content h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db; /* Blue separator */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.goal-detail-status {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* --- Context Box (Self-Appraisal Display) --- */
+.self-appraisal-context-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e7ee;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+.self-appraisal-context-box p {
+    margin: 5px 0;
+}
+
+
+/* --- Form Group and Input Consistency --- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.rating-input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.rating-desc {
+    margin-left: 10px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* --- Button Consistency --- */
+.primary-btn {
+    background-color: #2ecc71; /* Green for Finalize/Success */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.secondary-btn {
+    background-color: #ecf0f1;
+    color: #34495e;
+    padding: 10px 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    cursor: pointer;
+}
